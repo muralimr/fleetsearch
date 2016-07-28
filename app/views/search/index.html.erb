@@ -1,0 +1,58 @@
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Fleet Studio</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li> <%= link_to "home",root_path%></li>
+        <!-- <li><a href="#">About</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact</a></li> -->
+        <!-- <li> <#%= link_to "Elastic search" search_index_path %>  </li> -->
+        <li  class="active"><a href="/search"> Elastic search</a></li>
+
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <!-- <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li> -->
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+<div class="container" style="width: 100%;">
+  <div class="well">
+  
+ <%= link_to "New employee", new_search_path, remote: true, class: "btn btn-primary" %> 
+
+  
+
+  </div>
+
+  <div class="new-category"></div>
+  
+  <table class="table table-bordered table-striped" style="width: 43%;max-width:100%;margin-bottom: 20px; margin: auto;  font-size: 18px;text-align: center;">
+  
+    <tbody class="category-index">
+      
+      
+         <%= render "index" %>  
+      
+
+    </tbody>
+  </table>
+  
+</div>
+
+<div id="category-modal" class="modal fade"></div>
+
+

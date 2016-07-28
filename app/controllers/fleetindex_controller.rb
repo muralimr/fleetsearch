@@ -1,0 +1,2 @@
+class FleetindexController < ApplicationController
+end
